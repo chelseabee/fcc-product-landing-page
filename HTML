@@ -1,30 +1,64 @@
 <main>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <body>
     <header id="header">
       <div class="logo">
-           <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/3062/3062759.png" alt="Clover's Candle Co. Logo"/> 
+        <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/3062/3062759.png" alt="Clover's Candle Co. Logo" />
       </div>
       <nav id="nav-bar">
         <h1>Clover's Candle Co.</h1>
         <ul>
-          <li><a href="top">^</a></li>
-          <li><a href="#contact">Contact</a></li>
-       <li><a href="#reviews">Reviews</a></li>
-  <li><a href="#about">About</a></li> 
-</ul>
+          <li><a href="#top" class="nav-link">^</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#make" class="nav-link">Make</a></li>
+          <li><a href="#pricing" class="nav-link">Purchase</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
       </nav>
     </header><br>
-    <div >
+    <div>
       <h2 id="top">Handcrafted All Natural Candles</h2>
-      <p>Enter your email to join our mailing list, so you will always be the first to know about new products and promotions!<p>
-      <img id="img2" src="https://images.unsplash.com/photo-1603905179139-db12ab535ca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=437&q=80"/><br>
-    </div>
+      <p>Enter your email to join our mailing list, so you will always be the first to know about new products and promotions!
+      <p>
+      <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="you@email.com">     
+ <input type="submit"                        id="submit" 
+       value="Enter"><br><br>
+      </form>  
+      </div>
     <section id="about">
-      <h3>About Our Candle's</h3>  
-      <p>Clover's Candle's are hancrafted with only the finest ingredients. We combine beeswax, essential oils, and wooden wicks to make the perfect smelling and burning candle. </p>
-      
+      <h3>About Our Candle's</h3>
+      <p>Clover's Candle's are hancrafted with only the finest ingredients. We combine beeswax, essential oils, and wooden wicks to make the perfect smelling and burning candle. </p><br>
+   
+    </section><br>
+    <section class="flex-container" id="pricing">
+        <div class="item"><h4>Single Candle<br>$15</h4><img id="img3" src="https://images.unsplash.com/photo-1605718700628-19eb58d0e8e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+          <button class="btn"> Purchase</button>
+        </div>
+        <div class="item"><h4>Set of 4<br>$35</h4><img id="img2" src="https://images.unsplash.com/photo-1603905179139-db12ab535ca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=437&q=80" />
+          <button class="btn"> Purchase</button>
+         </div>
+        <div class="item">  <h4>Candle Making Kit<br>$15</h4> <img id="img4" src="https://images.pexels.com/photos/8271824/pexels-photo-8271824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+          <button class="btn"> Purchase</button>
+        </div>
+    </section><br><br>
+    <section id="make">
+      <h3>Interested in makeing your own?</h3>
+      <p>We have kits available so that you can make your very own candles. Purchase a Make Your Own Kit and watch the video below to learn how to craft amazing candles. </p>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/1tDWhMxtEqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-    <footer><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+      <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      </section><br>
+    <footer>
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
   </body>
-</main> 
+</main>
